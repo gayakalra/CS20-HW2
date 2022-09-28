@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <meta name='viewport' content="width=device-width,intial-scale=1">
+        <meta name='viewport' content="width=device-width,intial-scale=1 zoom=1">
         <link href="media.css" rel="stylesheet" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,36 +20,31 @@
                 background-color: #F4EEF9;    
             }
             
-            table {
-                width: 100%; 
-            }
-        
             .header {
                 background-color: #6B19AF; 
                 height: 80px; 
                 position: sitcky; 
                 top: 0; 
-                width:100%
+                width: 100%
             }
             
             .Jarney {
+                display:inline-block; 
                 Padding: 8px; 
                 Padding-left: 60px;
                 font-family: poppins;
                 font-size: 40px;
                 color: white; 
+                width: 80%
             }
 
             .button {
                 display: inline-block;  
-                padding: 10px;
+                padding: 8px;
                 font-family: poppins;
                 font-size: 15px;
                 color: white; 
-            }
-            
-            .Login {
-                margin-right: 100px; 
+                margin-top: 0px; 
             }
             
             
@@ -61,18 +56,14 @@
             
             .Slogan {
                 font-family: Montserrat; 
-                font-size: 20px; 
+                font-size: 20px;
+                text-align:center;  
+                justify-content:center; 
             }
             
-            .image {
-                Padding-right: 100px; 
-                Padding-top: 30px;
-            }
             
-            .Button {
-                Padding: 3px; 
-                Padding-left: 80px; 
-                Padding-top: 2px; 
+            .main div {
+                align-items:center; 
             }
             
             
@@ -85,40 +76,38 @@
     <body>
         <div class="header">
             
-            <table>
-                <tr>
-                    <td style="text-align: left"> <div class = "Jarney">
-                        <a href="#" style="color: white">JARney</a>
-                    </div> </td>
-                    <td style="text-align: right"> <div class = "button Services">
-                        <a href="services.html" style="color: white">Services</a>
-                    </div> <div class = "button Contact">
-                        <a href="contacts.html" style="color: white">Contact</a>
-                    </div> <div class = "button Login">
-                        Log in 
-                    </div> </td>
-                </tr>
-            </table>
-            
+            <div class = "Jarney">
+                <a href="#" style="color: white">JARney</a>
+            </div> 
+
+                    
+             <div class = "button">
+                <a href="services.html" style="color: white">Services</a>
+            </div> 
+            <div class = "button">
+                <a href="contacts.html" style="color: white">Contact</a>
+            </div>
+    
         </div>
         
+        
+        
         <div class="main">
-            
-            <table>
-                <tr>
-                    <td style= "text-align: left"> <div class = "Button Logo">
-                        JARney.
-                    </div> <div class = "Button Slogan">
-                        Plan out your semester schedule with one click of a button
-                    </div> </td>
-                    <td style="text-align: right"> <div class = "image">
-                        <img src="laptop.png" alt="girl on laptop" 
-                         width="580">
-                    </div> </td>
-                </tr>  
                 
-            </table>
-            
+                    <div style= "text-align: center"> 
+                        <h1 class = "Logo">JARney. </h1> 
+                        <h2 class = "Slogan">
+                        Plan out your semester schedule with one click of a button
+                        </h2> 
+                    </div>
+                    
+                    <div style= "text-align: center"> 
+                        <div class = "image">
+                            <img src="laptop.png" alt="girl on laptop" width="580">
+                        </div> 
+                    </div>
+                
+                        
         </div>
         
     </body>
